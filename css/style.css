@@ -1,0 +1,291 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px 0px 0px 0px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-weight: Arial, Helvetica, sans-serif;
+  background-color: #e1dfb9;
+  font-size: 12pt;
+  overflow: hidden;
+  padding: 15px;
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: 8% auto;
+  background-color: #f0f0f0;
+  border-radius: 25px 25px 25px 25px;
+}
+
+.header {
+  border-radius: 25px 25px 0 0;
+  background-color: #8fa09b;
+  padding: 5px;
+  -webkit-animation-name: coloranimation;
+          animation-name: coloranimation;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+.header__title {
+  width: 100%;
+  font-size: 2.2em;
+  text-align: center;
+  color: #ffe;
+  position: relative;
+  -webkit-animation-name: title;
+          animation-name: title;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+.aside {
+  width: 200px;
+  padding: 0 10px;
+  float: left;
+}
+
+.aside__list {
+  padding: 0px 0px 0px 0px;
+  list-style: none;
+}
+
+.menu__link {
+  font-size: 22px;
+  padding: 0px 0px 10px 0px;
+}
+
+.menu__link :hover {
+  color: #1ad69e;
+}
+
+.menu__link a {
+  color: #349c7d;
+}
+
+.content {
+  margin: 0px 0px 0px 200px;
+  padding: 10px;
+  background-color: #fff;
+  -webkit-animation-name: coloranimationcontent;
+          animation-name: coloranimationcontent;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+.content__title {
+  font-size: 1.5em;
+  color: #349c7d;
+}
+
+.content__link {
+  font-size: 22px;
+  padding: 0px 0px 6px 0px;
+}
+
+.footer {
+  border-radius: 0 0 25px 25px;
+  background-color: #8fa09b;
+  -webkit-animation-name: coloranimation;
+          animation-name: coloranimation;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+.footer__title {
+  font-size: 18px;
+  color: #fff;
+  padding: 5px;
+  text-align: center;
+  position: relative;
+  -webkit-animation-name: footertitle;
+          animation-name: footertitle;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes coloranimation {
+  0% {
+    background-color: #8fa09b;
+  }
+  50% {
+    background-color: #1ad69e;
+  }
+  100% {
+    background-color: #8fa09b;
+  }
+}
+
+@keyframes coloranimation {
+  0% {
+    background-color: #8fa09b;
+  }
+  50% {
+    background-color: #1ad69e;
+  }
+  100% {
+    background-color: #8fa09b;
+  }
+}
+
+@-webkit-keyframes coloranimationcontent {
+  0% {
+    background-color: #fff;
+  }
+  50% {
+    background-color: #a5beb7;
+  }
+  100% {
+    background-color: #ffffff;
+  }
+}
+
+@keyframes coloranimationcontent {
+  0% {
+    background-color: #fff;
+  }
+  50% {
+    background-color: #a5beb7;
+  }
+  100% {
+    background-color: #ffffff;
+  }
+}
+
+@-webkit-keyframes title {
+  0% {
+    left: 0%;
+  }
+  50% {
+    left: -26%;
+  }
+  100% {
+    left: 26%;
+  }
+}
+
+@keyframes title {
+  0% {
+    left: 0%;
+  }
+  50% {
+    left: -26%;
+  }
+  100% {
+    left: 26%;
+  }
+}
+
+@-webkit-keyframes footertitle {
+  0% {
+    left: 0%;
+  }
+  50% {
+    left: -38%;
+  }
+  100% {
+    left: 38%;
+  }
+}
+
+@keyframes footertitle {
+  0% {
+    left: 0%;
+  }
+  50% {
+    left: -38%;
+  }
+  100% {
+    left: 38%;
+  }
+}
+
+@media (max-width: 768px) {
+  @-webkit-keyframes footertitle {
+    0% {
+      left: 0%;
+    }
+    50% {
+      left: -28%;
+    }
+    100% {
+      left: 28%;
+    }
+  }
+  @keyframes footertitle {
+    0% {
+      left: 0%;
+    }
+    50% {
+      left: -28%;
+    }
+    100% {
+      left: 28%;
+    }
+  }
+  @-webkit-keyframes title {
+    0% {
+      left: 0%;
+    }
+    50% {
+      left: -16%;
+    }
+    100% {
+      left: 16%;
+    }
+  }
+  @keyframes title {
+    0% {
+      left: 0%;
+    }
+    50% {
+      left: -16%;
+    }
+    100% {
+      left: 16%;
+    }
+  }
+}
